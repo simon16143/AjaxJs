@@ -1,0 +1,157 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>Laboratorio. Tecnologías JavaScript y AJAX</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- uno de  de librerias de Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	</head>
+<body class="home">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/unir.jpg" alt="">
+			<span class="title">Unir</span>
+			<span class="tagline">Desarrollo de Aplicaciones en Red</span><br>
+				<span>Jorge Noreña  y Simón López</span>
+		 </h1>
+	</div>
+
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Inicio</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">trabajos <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="JavaScript1.html">JavaScript1</a></li>
+							<li><a href="JavaScript2.html">JavaScript2</a></li>
+							<li><a href="JavaScript3.html">JavaScript3</a></li>
+							<li><a href="JavaScript4.html">JavaScript4</a></li>
+						    <li><a href="AJAX.html">AJAX</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>JavaScript</h4>
+						<p>3.	Escribe un programa que pida una frase y escriba las vocales que aparecen.</p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4></h4>
+						<p><img src="assets/images/descarga.png" alt=""></p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>VOCALES</h4>
+						<p><img src="assets/images/images.jpg" alt=""></p>
+						<p>En fonética, una vocal o monoptongo es un sonido de una lengua natural hablada que se pronuncia con el tracto vocal abierto, no habiendo un aumento de la presión del aire en ningún punto más arriba de la glotis, es decir, ni en la boca ni en la faringe. </p>
+					</div>
+				</div>
+
+			</aside>			<!-- /Sidebar -->
+
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">4.	Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales.</h1>
+				    <form>
+						<input type = "text" name="t1" placeholder = "Escribe tu frase">
+						<input type = "submit" value="SUBMIT" onClick="return vowel(this.form.t1.value)"/>
+				        <div id="p"></div>
+					</form>
+					<script src="./js/script4.js"></script>   
+				</header>
+              
+			</article>
+			<!-- /Article -->
+			
+
+		</div>
+	</div>	<!-- /container -->
+	
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contacto</h3>
+				<div class="widget-body">
+					<p>telefono<br>
+						<a href="mailto:#">correo</a><br>
+						<br>
+						colombia
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">siguenos</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href=""><i class="fa fa-twitter fa-2"></i></a>
+						<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+						<a href=""><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">realizadorees</h3>
+				<div class="widget-body">
+					<p>Jorge  Noreña</p>
+					<p>Simon</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
